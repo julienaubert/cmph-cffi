@@ -12,6 +12,8 @@ def is_file_location(obj):
     Check to see if the presented object could represent a file location
     """
     return isinstance(obj, six.string_types) and exists(abspath(obj))
+
+
 def is_file(obj):
     """
     Check to see if the presented object could represent a file
